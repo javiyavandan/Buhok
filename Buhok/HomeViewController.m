@@ -36,7 +36,7 @@
 //    [self.myapptView addGestureRecognizer:tapGeature];
 //    //[self.locationView addGestureRecognizer:tapGeature];
     //[self.inviteView addGestureRecognizer:tapGeature];
-    [self.view addGestureRecognizer:tapGeature];
+    //[self.view addGestureRecognizer:tapGeature];
     // Do any additional setup after loading the view.
 }
 
@@ -54,8 +54,7 @@
     UIImageView *touchView1 = (UIImageView *)[sender view];
     NSLog(@"%d",touchView1.tag);
     
-    MakeappointmentViewController *makView = (MakeappointmentViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"MakeappointmentViewController"];
-    [self.navigationController pushViewController:makView animated:YES];
+
     
 }
 
@@ -70,4 +69,13 @@
 }
 */
 
+- (IBAction)ImagesClick:(id)sender {
+    UIButton *touchView = (UIButton *)sender ;
+    NSLog(@"%d",touchView.tag);
+    if(touchView.tag == 1)
+    {
+        MakeappointmentViewController *makView = (MakeappointmentViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"MakeappointmentViewController"];
+        [self.navigationController pushViewController:makView animated:YES];
+    }
+}
 @end

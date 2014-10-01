@@ -65,4 +65,10 @@
 
 - (IBAction)Done_click:(id)sender {
 }
+
+#pragma TextFieldDelagate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end

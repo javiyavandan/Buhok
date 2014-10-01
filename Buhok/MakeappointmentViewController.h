@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MakeappointmentViewController : UIViewController
+@interface MakeappointmentViewController : UIViewController<UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *btnDone;
 @property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *btnBack;

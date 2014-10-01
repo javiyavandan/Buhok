@@ -17,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIView *myapptView;
 @property (strong, nonatomic) IBOutlet UIView *locationView;
 @property (strong, nonatomic) IBOutlet UIView *inviteView;
+- (IBAction)ImagesClick:(id)sender;
 
 @end
